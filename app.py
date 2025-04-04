@@ -11,7 +11,7 @@ def response(value = None):
 def nothing():
   return response()
 
-@app.route('/<subpath>')
+@app.route('/<path:subpath>')
 def hello(subpath):
   return response(subpath)
 
